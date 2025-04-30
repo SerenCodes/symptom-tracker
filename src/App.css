@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #e0f7fa);
+}
+
+.app-container {
+  max-width: 750px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.filter-date {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.download-btn {
+  background-color: #007bff;
+  color: white;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+.symptom-list {
+  list-style: none;
+  padding: 0;
+}
+
+.symptom-item {
+  background: #f9fafb;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border-left: 5px solid #4caf50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: transform 0.2s ease;
+}
+
+.symptom-item:hover {
+  transform: translateY(-2px);
+}
+
+.symptom-item.saved {
+  border-left-color: #2196f3;
+}
+
+.symptom-text {
+  flex: 1;
+  min-width: 220px;
+}
+
+.symptom-actions {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.symptom-actions button {
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.btn.edit {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.btn.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn.report {
+  background-color: #4caf50;
+  color: white;
+}
+
+.report-tag {
+  margin-top: 6px;
+  color: #1976d2;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.severity {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.severity-low {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.severity-medium {
+  background-color: #fff8e1;
+  color: #f9a825;
+}
+
+.severity-high {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.no-symptoms {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  margin-top: 30px;
+}

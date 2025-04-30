@@ -1,0 +1,49 @@
+.form-container {
+  margin-bottom: 30px;
+  background-color: #f1f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #cfd8dc;
+}
+
+.form-container h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.25rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 3px #007bff55;
+}
+
+button.submit-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button.submit-btn:hover {
+  background-color: #218838;
+}
