@@ -48,3 +48,9 @@ This is a React-based symptom tracker that helps users log and manage their dail
 ## 📸 Demo
 
 ![Symptom Tracker Demo](./assets/ezgif.com-speed.gif)
+
+
+
+## 🔗 Live Demo  
+[View the Symptom Tracker App](https://symptom-tracker-seren.netlify.app)
+
