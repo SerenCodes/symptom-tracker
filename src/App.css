@@ -4,6 +4,7 @@ body {
   background: linear-gradient(to right, #f0f4f8, #e0f7fa);
 }
 
+/* Container for the whole app */
 .app-container {
   max-width: 750px;
   margin: 40px auto;
@@ -13,43 +14,78 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Header */
 .title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem; /* Larger, more prominent */
   margin-bottom: 20px;
   color: #333;
+  font-weight: 600;
 }
 
-.filter-date {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-.btn {
-  padding: 10px 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: background-color 0.2s ease;
-}
-
+/* Download Button */
 .download-btn {
   background-color: #007bff;
   color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
   display: block;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 20px;
 }
 
 .download-btn:hover {
   background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
+.download-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Filter and Symptom Form */
+.filter-date, .symptom-form input, .symptom-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+.filter-date:focus, .symptom-form input:focus, .symptom-form select:focus {
+  border: 1px solid #007bff;
+  outline: none;
+}
+
+/* Button styling for adding symptoms */
+.btn.add-symptom {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 10px auto;
+}
+
+.btn.add-symptom:hover {
+  background-color: #45a049;
+}
+
+/* Symptom List */
 .symptom-list {
   list-style: none;
   padding: 0;
@@ -76,11 +112,13 @@ body {
   border-left-color: #2196f3;
 }
 
+/* Symptom Text Styling */
 .symptom-text {
   flex: 1;
   min-width: 220px;
 }
 
+/* Symptom Actions (Edit, Delete, Save) */
 .symptom-actions {
   display: flex;
   flex-wrap: wrap;
@@ -107,13 +145,16 @@ body {
   color: white;
 }
 
-.report-tag {
-  margin-top: 6px;
-  color: #1976d2;
-  font-size: 14px;
-  font-weight: 500;
+/* No Symptoms Message */
+.no-symptoms {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  margin-top: 30px;
+  font-size: 1.1rem;
 }
 
+/* Severity Indicators */
 .severity {
   display: inline-block;
   margin-top: 6px;
@@ -137,9 +178,9 @@ body {
   color: #c62828;
 }
 
-.no-symptoms {
-  text-align: center;
-  color: #777;
-  font-style: italic;
-  margin-top: 30px;
+.report-tag {
+  margin-top: 6px;
+  color: #1976d2;
+  font-size: 14px;
+  font-weight: 500;
 }

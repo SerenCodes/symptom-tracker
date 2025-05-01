@@ -47,11 +47,33 @@ function App() {
       )
     );
   };
-
+  const downloadCSV = () => {
+    if (symptoms.length === 0) {
+      alert("No symptoms to download.");
+      return;
+    }
+  
+    const headers = ["Date", "Symptom", "Severity"];
+    const rows = symptoms.map((s) => [s.date, s.symptom, s.severity]);
+  
+    const csvContent =
+      "data:text/csv;charset=utf-8," +
+      [headers, ...rows].map((row) => row.join(",")).join("\n");
+  
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "symptom_report.csv");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div className="app-container">
       <h1 className="title">🩺 Symptom Tracker</h1>
-
+      <button className="btn download-btn" onClick={downloadCSV}>
+  ⬇️ Download Report (CSV)
+     </button>
       <input
         className="filter-date"
         type="date"
