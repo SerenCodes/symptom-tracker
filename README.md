@@ -51,6 +51,7 @@ This is a React-based symptom tracker that helps users log and manage their dail
 
 
 
-## 🔗 Live Demo  
+## 🔗 Live Demo
+
 [View the Symptom Tracker App](https://symptom-tracker-seren.netlify.app)
 
