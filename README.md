@@ -42,3 +42,9 @@ This is a React-based symptom tracker that helps users log and manage their dail
 - Export as PDF
 - User authentication
 - Mobile-first improvements
+
+
+
+## 📸 Demo
+
+![Symptom Tracker Demo](./assets/ezgif.com-speed.gif)
