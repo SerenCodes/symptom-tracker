@@ -2,37 +2,40 @@
 
 This is a React-based symptom tracker that helps users log and manage their daily health symptoms. You can add, edit, delete, and save symptoms to a downloadable CSV report.
 
+> ✨ **Design Refresh – July 2025:**  
+> Updated with a polished header, cleaner layout, consistent button styling, and improved spacing for a more professional and responsive UI.
+
 ---
 
 ## 🚀 Features
 
 - Add, edit, and delete symptoms
 - Save symptoms to a report
-- Download symptom report as CSV
+- Download report as CSV
 - Filter symptoms by date
-- Local storage support (data saved in browser)
-- Clean, responsive UI
+- Data persists in local storage
+- Clean, responsive, accessible design
 
 ---
 
 ## 🛠️ Technologies Used
 
-- React (with Hooks)
+- React (Hooks: `useState`, `useEffect`)
 - JavaScript (ES6+)
 - HTML5 & CSS3
-- LocalStorage
+- LocalStorage for persistence
 - CSV export functionality
 
 ---
 
 ## 📚 What I Learned
 
-- Managing state and forms in React
-- Using `useState` and `useEffect`
-- Working with arrays (map, filter)
-- Storing data in the browser
-- Building and styling a modern UI
-- Exporting structured data to CSV
+- Learned how to manage form input and state in React using `useState`
+- Learned how to save and load data using the browser’s LocalStorage
+- Built editable and deletable item lists with filtering
+- Used conditional rendering for dynamic views and empty states
+- Exported structured data into a downloadable CSV format
+- Created a clean, mobile-friendly UI using modern CSS
 
 ---
 
@@ -40,18 +43,23 @@ This is a React-based symptom tracker that helps users log and manage their dail
 
 - Dark mode toggle
 - Export as PDF
-- User authentication
-- Mobile-first improvements
+- User authentication and login
+- Mobile-first UX refinements
 
+---
 
+## 🖼️ Screenshot
+
+![App Screenshot](./images/screenshot.jpeg)
+
+---
 
 ## 📸 Demo
 
-![Symptom Tracker Demo](./assets/ezgif.com-speed.gif)
+![Symptom Tracker Demo](./gif.gif)
 
-
+---
 
 ## 🔗 Live Demo
 
-[View the Symptom Tracker App](https://symptom-tracker-seren.netlify.app)
-
+👉 [View the Symptom Tracker App](https://symptom-tracker-seren.netlify.app)
