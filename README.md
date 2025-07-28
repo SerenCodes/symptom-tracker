@@ -50,13 +50,13 @@ This is a React-based symptom tracker that helps users log and manage their dail
 
 ## 🖼️ Screenshot
 
-![App Screenshot](./images/screenshot.jpeg)
+![Screenshot](./public/images/screenshot.jpeg)
 
 ---
 
 ## 📸 Demo
 
-![Symptom Tracker Demo](./gif.gif)
+![Demo](./public/images/gif.gif)
 
 ---
 

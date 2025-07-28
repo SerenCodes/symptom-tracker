@@ -97,6 +97,7 @@ body {
   color: #222;
 }
 
+
 .symptom-form input,
 .symptom-form select {
   display: block;
@@ -107,6 +108,7 @@ body {
   border-radius: 6px;
   font-size: 0.95rem;
 }
+
 
 .symptom-form button {
   width: 100%;
